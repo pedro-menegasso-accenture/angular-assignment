@@ -25,3 +25,23 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+# File Structure  
+
+The following is an abstraction of this project's main files  
+
+* src  
+  Main files containing the project's code  
+  
+  * app  
+    Core application files  
+    
+    * app.component.ts  
+      The class code for the app component, Typescript  
+
+    * app.component.html  
+      Template for app component  
+
+    * app.component.css  
+      Component's private css styles  
+      
