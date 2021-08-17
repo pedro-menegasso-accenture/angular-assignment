@@ -1,13 +1,20 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Navbar</a>
+<!--Define uma Navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <!--Define uma navbar com expaçamento 5 pixels e título: "usuários mock page"-->
+  <a class="navbar-brand px-5" href="#" tex>Usuarios Mock Page</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
+    <ul class="navbar-nav mr-auto px-10">
+      <!--Adiciona um link para a rota "Form" na qual o usuário pode preencher um usuário-->
       <li class="nav-item">
-        <a routerLink="/form" class="nav-link" href="#">Form</a>
+        <a routerLink="/form" class="nav-link" href="#">Cadastro</a>
+      </li>
+      <!-- Adiciona um link para a rota "Users" na qual pode-se ver uma lista dos usuários cadastrados-->
+      <li class="nav-item">
+        <a routerLink="/usersList" class="nav-link" href="#">Usuarios</a>
       </li>
     </ul>
 
