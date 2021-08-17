@@ -3,7 +3,8 @@
     <div class="col centered">
         <div class="row-lg-2 centered">
             <span>
-            <form [formGroup]="cadastroForm" class="form" #form="ngForm">
+            <!-- [formGroup] = "cadastroForm"   é uma Property binding  (designa o valor cadastroForm advindo do TypeScript como o conteúdo de formGroup)-->
+            <form [formGroup]="cadastroForm" class="form">
 
                 <input formControlName="usuarioNome" class="form-control mr-sm-2" type="UsuarioName" placeholder="nome" aria-label="nome">
                 <input formControlName="usuarioSenha" class="form-control mr-sm-2" type="UsuarioSenha" placeholder="senha" aria-label="senha">
@@ -12,7 +13,6 @@
             </form>
             </span>
         </div>
-        
     </div>
 </div>
 

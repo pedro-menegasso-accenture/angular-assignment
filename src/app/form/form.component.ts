@@ -4,7 +4,9 @@ import { Router } from '@angular/router';
 import { User } from 'src/models/user';
 import { FormService } from './form.service';
 
+// Defines the functioning of a form
 @Component({
+  // html tag for using this
   selector: 'app-form',
   templateUrl: './form.component.html',
   styleUrls: ['./form.component.css']
@@ -12,11 +14,14 @@ import { FormService } from './form.service';
 
 export class FormComponent implements OnInit {
 
+  // A property for this component, in this case a Form
   cadastroForm: FormGroup;
 
-
+  // The constructor for this component
   constructor(
+    // Responsible for building the form
     private construirForm: FormBuilder,
+    // Service that manages the form functioning
     private servirForm: FormService,
     private routes: Router
    ) {
